@@ -17,6 +17,6 @@ public class AppMain {
 	
 	AbstractApplicationContext context=new ClassPathXmlApplicationContext("application.xml");
 	Student student=context.getBean("student",Student.class);
-	System.out.println(student.getAge());
+	System.out.println("Student AGE iS "+student.getAge());
 	}
 }
